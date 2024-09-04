@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Examples with Different Font Colors</title>
+</head>
+<body>
+    <h2>Click the buttons to see alerts with different font colors:</h2>
+    
+    <button onclick="alertRed()">Red Alert</button>
+    <button onclick="alertGreen()">Green Alert</button>
+    <button onclick="alertBlue()">Blue Alert</button>
+
+    <script>
+        function alertRed() {
+            alert('This is a red alert!');
+        }
+
+        function alertGreen() {
+            alert('This is a green alert!');
+        }
+
+        function alertBlue() {
+            alert('This is a blue alert!');
+        }
+    </script>
+
+    <style>
+        alert {
+            color: red; /* This will not actually change the color of alert boxes, but will style text within the HTML document */
+        }
+    </style>
+
+    <!-- Note: Inline styles within alert() are not supported in most browsers, so alerts will display the default font color -->
+</body>
+</html>
